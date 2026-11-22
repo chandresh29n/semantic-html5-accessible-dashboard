@@ -263,3 +263,128 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* =================================
+   ACCESSIBLE FORMS
+================================= */
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input:not([type="checkbox"]),
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background-color: var(--surface);
+    color: var(--text);
+    font: inherit;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+}
+
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 25px 0;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* Buttons */
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+}
+
+button:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+}
+
+/* Accessible modal */
+
+dialog {
+    width: min(90%, 500px);
+    max-height: 85vh;
+    overflow-y: auto;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content > p {
+    margin-bottom: 20px;
+    color: var(--muted);
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#form-status,
+#modal-status,
+#user-status {
+    margin-top: 15px;
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+
+    dialog {
+        padding: 20px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-actions button {
+        width: 100%;
+    }
+
+}
