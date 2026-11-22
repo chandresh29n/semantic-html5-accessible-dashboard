@@ -1,0 +1,67 @@
+
+<dialog
+    id="user-dialog"
+    aria-labelledby="dialog-heading"
+    aria-describedby="dialog-description"
+>
+    <div class="modal-content">
+
+        <h2 id="dialog-heading">Add New User</h2>
+
+        <p id="dialog-description">
+            Enter the details of the new dashboard user.
+        </p>
+
+        <form id="add-user-form">
+
+            <div class="form-group">
+                <label for="new-user-name">Full Name</label>
+                <input
+                    type="text"
+                    id="new-user-name"
+                    name="name"
+                    required
+                    minlength="2"
+                    maxlength="60"
+                    autocomplete="name"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="new-user-email">Email Address</label>
+                <input
+                    type="email"
+                    id="new-user-email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="new-user-role">User Role</label>
+                <select id="new-user-role" name="role" required>
+                    <option value="">Select a role</option>
+                    <option value="Administrator">Administrator</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Employee">Employee</option>
+                </select>
+            </div>
+
+            <div class="modal-actions">
+                <button type="submit">Add User</button>
+
+                <button
+                    type="button"
+                    id="close-dialog"
+                >
+                    Cancel
+                </button>
+            </div>
+
+            <p id="modal-status" role="status" aria-live="polite"></p>
+
+        </form>
+
+    </div>
+</dialog>
