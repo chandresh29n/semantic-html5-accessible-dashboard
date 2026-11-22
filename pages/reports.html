@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enterprise dashboard reports and analytics.">
+    <title>Reports | AccessBoard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js" defer></script>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>AccessBoard</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="users.html">Users</a></li>
+                <li><a href="reports.html" aria-current="page">Reports</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-layout">
+
+        <aside aria-label="Dashboard sidebar">
+            <h2>Workspace</h2>
+            <nav aria-label="Sidebar navigation">
+                <ul>
+                    <li><a href="../index.html">Overview</a></li>
+                    <li><a href="users.html">Manage Users</a></li>
+                    <li><a href="reports.html" aria-current="page">Analytics</a></li>
+                    <li><a href="settings.html">Preferences</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="main-content">
+
+            <section aria-labelledby="reports-heading">
+                <h2 id="reports-heading">Reports and Analytics</h2>
+                <p>Review enterprise performance and activity records.</p>
+            </section>
+
+            <section aria-labelledby="summary-heading">
+                <h2 id="summary-heading">Performance Summary</h2>
+
+                <div class="dashboard-cards">
+
+                    <article>
+                        <h3>Monthly Reports</h3>
+                        <p>48</p>
+                    </article>
+
+                    <article>
+                        <h3>Completed Tasks</h3>
+                        <p>186</p>
+                    </article>
+
+                    <article>
+                        <h3>Pending Tasks</h3>
+                        <p>24</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section aria-labelledby="report-table-heading">
+                <h2 id="report-table-heading">Report History</h2>
+
+                <table>
+                    <caption>Enterprise report generation history</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Report ID</th>
+                            <th scope="col">Report Name</th>
+                            <th scope="col">Generated Date</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>REP001</td>
+                            <td>Monthly Performance</td>
+                            <td>2026-11-05</td>
+                            <td>Completed</td>
+                        </tr>
+
+                        <tr>
+                            <td>REP002</td>
+                            <td>User Activity</td>
+                            <td>2026-11-12</td>
+                            <td>Completed</td>
+                        </tr>
+
+                        <tr>
+                            <td>REP003</td>
+                            <td>System Overview</td>
+                            <td>2026-11-20</td>
+                            <td>Processing</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AccessBoard. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
