@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An accessible enterprise dashboard built using semantic HTML5.">
+
+    <meta name="description" content="AccessBoard enterprise dashboard with accessible navigation, data tables and user management.">
+
     <title>AccessBoard | Enterprise Dashboard</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,38 +19,56 @@
     </a>
 
     <header id="site-header">
+
         <h1>AccessBoard</h1>
 
         <nav aria-label="Main navigation">
             <ul>
-                <li><a href="index.html" aria-current="page">Dashboard</a></li>
+                <li>
+                    <a href="index.html" aria-current="page">
+                        Dashboard
+                    </a>
+                </li>
                 <li><a href="pages/users.html">Users</a></li>
                 <li><a href="pages/reports.html">Reports</a></li>
                 <li><a href="pages/settings.html">Settings</a></li>
             </ul>
         </nav>
+
     </header>
 
     <div class="dashboard-layout">
 
-        <aside aria-label="Dashboard sidebar">
-            <h2>Workspace</h2>
+        <aside aria-labelledby="sidebar-heading">
+
+            <h2 id="sidebar-heading">Workspace</h2>
 
             <nav aria-label="Sidebar navigation">
                 <ul>
-                    <li><a href="index.html" aria-current="page">Overview</a></li>
+                    <li>
+                        <a href="index.html" aria-current="page">
+                            Overview
+                        </a>
+                    </li>
                     <li><a href="pages/users.html">Manage Users</a></li>
                     <li><a href="pages/reports.html">Analytics</a></li>
                     <li><a href="pages/settings.html">Preferences</a></li>
                 </ul>
             </nav>
+
         </aside>
 
         <main id="main-content">
 
             <section aria-labelledby="dashboard-heading">
-                <h2 id="dashboard-heading">Dashboard Overview</h2>
-                <p>Welcome to your accessible enterprise workspace.</p>
+
+                <h2 id="dashboard-heading">
+                    Dashboard Overview
+                </h2>
+
+                <p>
+                    Welcome to your accessible enterprise workspace.
+                </p>
 
                 <div class="dashboard-cards">
 
@@ -67,13 +88,20 @@
                     </article>
 
                 </div>
+
             </section>
 
             <section aria-labelledby="activity-table-heading">
-                <h2 id="activity-table-heading">Recent Activity</h2>
+
+                <h2 id="activity-table-heading">
+                    Recent Activity
+                </h2>
 
                 <table>
-                    <caption>Recent enterprise dashboard activities</caption>
+
+                    <caption>
+                        Recent enterprise dashboard activities
+                    </caption>
 
                     <thead>
                         <tr>
@@ -84,6 +112,7 @@
                     </thead>
 
                     <tbody>
+
                         <tr>
                             <td>Admin</td>
                             <td>Updated user profile</td>
@@ -95,8 +124,11 @@
                             <td>Generated monthly report</td>
                             <td>Completed</td>
                         </tr>
+
                     </tbody>
+
                 </table>
+
             </section>
 
         </main>
@@ -104,7 +136,9 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 AccessBoard. All rights reserved.</p>
+        <p>
+            &copy; 2026 AccessBoard. All rights reserved.
+        </p>
     </footer>
 
 </body>
