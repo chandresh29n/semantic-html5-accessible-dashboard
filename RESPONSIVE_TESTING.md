@@ -5,8 +5,8 @@
 - **Project:** AccessBoard – Responsive Enterprise Dashboard
 - **Testing Type:** Responsive Design and Mobile-First CSS Testing
 - **Framework:** HTML5 and CSS3
-- **Testing Browser:** Google Chrome
-- **Testing Method:** Chrome Developer Tools Device Toolbar
+- **Testing Browser:** Mozilla FireFox
+- **Testing Method:** Firefox Toolbar
 
 ## 2. Implementation Details
 
